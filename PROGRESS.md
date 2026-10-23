@@ -9,7 +9,7 @@
 
 ### Week 1 Checklist
 - [x] Day 1 — GitHub repo + local setup
-- [ ] Day 2 — Project structure + venv
+- [x] Day 2 — Project structure + venv
 - [ ] Day 3 — FastAPI skeleton
 - [ ] Day 4 — /scan endpoint + Bandit
 - [ ] Day 5 — CLI tool
@@ -34,3 +34,18 @@
 - Initially cloned into wrong folder, but fixed it by deleting and cloning fresh.
 
 ---
+
+### Day 2 — 2025-10-24
+**Time spent:** 60 min
+**What I did:**
+- Created backend folder structure (api, services, models, tests)
+- Setup Python virtual environment (venv)
+- Installed dependencies (FastAPI, Bandit, Pydantic, etc.)
+
+**What I learned:**
+- Virtual environment kya hota hai aur kyun zaroori hai.
+- requirements.txt se libraries install karna.
+
+**Blockers:** Pydantic version error aya tha, usko update karke fix kiya.
+
+**Commit:** (fill after push)
