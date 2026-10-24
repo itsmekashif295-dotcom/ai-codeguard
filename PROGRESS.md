@@ -10,7 +10,7 @@
 ### Week 1 Checklist
 - [x] Day 1 — GitHub repo + local setup
 - [x] Day 2 — Project structure + venv
-- [ ] Day 3 — FastAPI skeleton
+- [x] Day 3 — FastAPI skeleton
 - [ ] Day 4 — /scan endpoint + Bandit
 - [ ] Day 5 — CLI tool
 - [ ] Day 6 — Tests + Docs
@@ -49,3 +49,18 @@
 **Blockers:** Pydantic version error aya tha, usko update karke fix kiya.
 
 **Commit:** (fill after push)
+
+
+### Day 3 — 2025-10-25
+**Time spent:** 60 min
+**What I did:**
+- Created FastAPI application in `app/main.py`
+- Added root `/` and `/health` endpoints
+- Ran uvicorn server and tested in browser
+- Explored auto-generated Swagger docs at `/docs`
+
+**What I learned:**
+- How FastAPI works
+- What `uvicorn --reload` does (auto-restarts on code change)
+
+**Blockers:** Faced Windows Uvicorn red error, but server was running. Fixed git repository path issue.
