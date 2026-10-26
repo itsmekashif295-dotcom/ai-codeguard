@@ -11,7 +11,7 @@
 - [x] Day 1 — GitHub repo + local setup
 - [x] Day 2 — Project structure + venv
 - [x] Day 3 — FastAPI skeleton
-- [ ] Day 4 — /scan endpoint + Bandit
+- [x] Day 4 — /scan endpoint + Bandit
 - [ ] Day 5 — CLI tool
 - [ ] Day 6 — Tests + Docs
 - [ ] Day 7 — Review + v0.1.0 tag
@@ -64,3 +64,18 @@
 - What `uvicorn --reload` does (auto-restarts on code change)
 
 **Blockers:** Faced Windows Uvicorn red error, but server was running. Fixed git repository path issue.
+
+
+### Day 4 — 2025-10-26
+**Time spent:** 60 min
+**What I did:**
+- Created Pydantic schemas for request/response
+- Built Bandit service to run scans securely in temp files
+- Created `/scan` endpoint
+- Tested API via Swagger UI and successfully detected CWE-78.
+
+**What I learned:**
+- How to run external commands (`subprocess`) in Python.
+- How to fix environment compatibility issues (Python 3.14 vs 3.12).
+
+**Blockers:** Faced Bandit crash due to Python 3.14, fixed by downgrading to Python 3.12.
