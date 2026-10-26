@@ -1,13 +1,15 @@
 from fastapi import FastAPI
+from app.api import scan
 
-# FastAPI application initialize kar rahe hain
 app = FastAPI(
     title="AI CodeGuard",
     description="AI-Generated Code Vulnerability Detection System",
     version="0.1.0"
 )
 
-# Root endpoint (Jab koi main page kholay ga)
+# Yahan hum naya scan router attach kar rahe hain
+app.include_router(scan.router)
+
 @app.get("/")
 def read_root():
     return {
@@ -16,7 +18,6 @@ def read_root():
         "version": "0.1.0"
     }
 
-# Health check endpoint
 @app.get("/health")
 def health_check():
     return {
