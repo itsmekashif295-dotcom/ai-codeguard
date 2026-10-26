@@ -12,7 +12,7 @@
 - [x] Day 2 — Project structure + venv
 - [x] Day 3 — FastAPI skeleton
 - [x] Day 4 — /scan endpoint + Bandit
-- [ ] Day 5 — CLI tool
+- [x] Day 5 — CLI tool
 - [ ] Day 6 — Tests + Docs
 - [ ] Day 7 — Review + v0.1.0 tag
 
@@ -79,3 +79,16 @@
 - How to fix environment compatibility issues (Python 3.14 vs 3.12).
 
 **Blockers:** Faced Bandit crash due to Python 3.14, fixed by downgrading to Python 3.12.
+
+### Day 5 — 2025-10-27
+**Time spent:** 60 min
+**What I did:**
+- Added `typer` and `requests` to dependencies.
+- Built CLI tool in `cli/codeguard.py`.
+- Tested CLI against a local vulnerable file.
+
+**What I learned:**
+- How to create command-line applications using Typer.
+- How to make HTTP requests in Python using `requests`.
+
+**Blockers:** None
