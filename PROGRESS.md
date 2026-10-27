@@ -13,7 +13,7 @@
 - [x] Day 3 — FastAPI skeleton
 - [x] Day 4 — /scan endpoint + Bandit
 - [x] Day 5 — CLI tool
-- [ ] Day 6 — Tests + Docs
+- [x] Day 6 — Tests + Docs
 - [ ] Day 7 — Review + v0.1.0 tag
 
 ---
@@ -92,3 +92,19 @@
 - How to make HTTP requests in Python using `requests`.
 
 **Blockers:** None
+
+
+
+### Day 6 — 2025-10-28
+**Time spent:** 60 min
+**What I did:**
+- Wrote automated tests using Pytest (test_scan.py).
+- Fixed module import error using pytest.ini.
+- Ran tests and verified 3 tests pass.
+- Created `docs/scope.md` and `docs/architecture.md`.
+
+**What I learned:**
+- How to test FastAPI endpoints using TestClient.
+- Importance of documentation in real projects.
+
+**Blockers:** Faced ModuleNotFoundError, fixed by adding pythonpath to pytest.ini.
