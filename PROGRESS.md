@@ -14,7 +14,15 @@
 - [x] Day 4 — /scan endpoint + Bandit
 - [x] Day 5 — CLI tool
 - [x] Day 6 — Tests + Docs
-- [ ] Day 7 — Review + v0.1.0 tag
+- [x] Day 7 — Review + v0.1.0 tag
+### Week 2 Checklist (AI Layer)
+- [x] Day 8 — Gemini AI Setup + API Connection
+- [ ] Day 9 — AI-based CWE Classification
+- [ ] Day 10 — Hybrid Scanner (Bandit + AI)
+- [ ] Day 11 — Confidence Scoring
+- [ ] Day 12 — Prompt Engineering + Testing
+- [ ] Day 13 — Evaluation on Dataset
+- [ ] Day 14 — Review + v0.2.0 Tag
 
 ---
 
@@ -108,3 +116,22 @@
 - Importance of documentation in real projects.
 
 **Blockers:** Faced ModuleNotFoundError, fixed by adding pythonpath to pytest.ini.
+
+
+
+### Day 8 — 2025-10-30
+**Time spent:** 60 min
+**What I did:**
+- Got Gemini API key from Google AI Studio.
+- Created `.env` file to securely store API key.
+- Installed `google-genai` SDK.
+- Built `ai_service.py` to interact with Gemini.
+- Fixed model name error (updated to gemini-3.8-flash).
+- Tested AI connection successfully.
+
+**What I learned:**
+- How to use environment variables for secrets.
+- How to integrate LLMs in a Python project.
+- How to debug API model version changes.
+
+**Blockers:** Faced model not found error, fixed by updating the model name.
