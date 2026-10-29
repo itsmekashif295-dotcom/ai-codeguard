@@ -17,7 +17,7 @@
 - [x] Day 7 — Review + v0.1.0 tag
 ### Week 2 Checklist (AI Layer)
 - [x] Day 8 — Gemini AI Setup + API Connection
-- [ ] Day 9 — AI-based CWE Classification
+- [x] Day 9 — AI-based CWE Classification
 - [ ] Day 10 — Hybrid Scanner (Bandit + AI)
 - [ ] Day 11 — Confidence Scoring
 - [ ] Day 12 — Prompt Engineering + Testing
@@ -135,3 +135,18 @@
 - How to debug API model version changes.
 
 **Blockers:** Faced model not found error, fixed by updating the model name.
+
+
+### Day 9 — 2025-10-31
+**Time spent:** 60 min
+**What I did:**
+- Designed a structured prompt for security analysis.
+- Added `analyze_code_with_ai()` function to ai_service.py.
+- Handled JSON parsing.
+- Tested on vulnerable + safe code samples.
+
+**What I learned:**
+- Prompt Engineering for structured AI responses.
+- Handling Windows terminal Unicode errors.
+
+**Blockers:** Faced emoji Unicode error, fixed by removing it from the test script.
