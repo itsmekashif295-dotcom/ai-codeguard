@@ -18,7 +18,7 @@
 ### Week 2 Checklist (AI Layer)
 - [x] Day 8 — Gemini AI Setup + API Connection
 - [x] Day 9 — AI-based CWE Classification
-- [ ] Day 10 — Hybrid Scanner (Bandit + AI)
+- [x] Day 10 — Hybrid Scanner (Bandit + AI)
 - [ ] Day 11 — Confidence Scoring
 - [ ] Day 12 — Prompt Engineering + Testing
 - [ ] Day 13 — Evaluation on Dataset
@@ -150,3 +150,19 @@
 - Handling Windows terminal Unicode errors.
 
 **Blockers:** Faced emoji Unicode error, fixed by removing it from the test script.
+
+
+
+### Day 10 — 2025-11-01
+**Time spent:** 120 min
+**What I did:**
+- Updated Pydantic schemas to include AI fields.
+- Built `hybrid_service.py` to combine Bandit + AI.
+- Updated `/scan` endpoint to use hybrid scanner.
+- Tested via Swagger UI and CLI.
+
+**What I learned:**
+- How to orchestrate multiple services.
+- How to merge structured findings from different sources.
+
+**Blockers:** None
