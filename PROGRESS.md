@@ -182,16 +182,13 @@
 **Blockers:** AI timed out due to slow internet, but software handled it gracefully.
 
 
-
 ### Day 12 — 2025-11-03
-**Time spent:** 60 min
+**Time spent:** 120 min
 **What I did:**
-- Improved AI prompts (shorter, more direct).
-- Added user-friendly error messages for AI failures.
-- Tested graceful timeout handling.
+- Improved AI prompts and error messages.
+- Added `confidence_score` to findings.
+- Calculated scores: 95% (Bandit + AI), 80% (AI only), 70% (Bandit only), 50% (AI fail).
 
 **What I learned:**
-- Writing clear prompts for LLMs.
-- Mapping technical errors to user-friendly messages.
-
-**Blockers:** None
+- How to merge confidence from multiple sources.
+- Better UX with friendly error messages.
