@@ -19,7 +19,7 @@
 - [x] Day 8 — Gemini AI Setup + API Connection
 - [x] Day 9 — AI-based CWE Classification
 - [x] Day 10 — Hybrid Scanner (Bandit + AI)
-- [ ] Day 11 — Confidence Scoring
+- [x] Day 11 — Confidence Scoring
 - [ ] Day 12 — Prompt Engineering + Testing
 - [ ] Day 13 — Evaluation on Dataset
 - [ ] Day 14 — Review + v0.2.0 Tag
@@ -166,3 +166,17 @@
 - How to merge structured findings from different sources.
 
 **Blockers:** None
+
+
+### Day 11 — 2025-11-02
+**Time spent:** 60 min
+**What I did:**
+- Added 10-second timeout to Gemini API calls.
+- Updated hybrid_service to gracefully handle AI failures.
+- Tested fallback (Bandit result still returned if AI fails).
+
+**What I learned:**
+- How to set timeouts in HTTP clients.
+- Error handling patterns for microservices.
+
+**Blockers:** AI timed out due to slow internet, but software handled it gracefully.
