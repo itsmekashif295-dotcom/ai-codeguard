@@ -20,7 +20,7 @@
 - [x] Day 9 — AI-based CWE Classification
 - [x] Day 10 — Hybrid Scanner (Bandit + AI)
 - [x] Day 11 — Confidence Scoring
-- [ ] Day 12 — Prompt Engineering + Testing
+- [x] Day 12 — Prompt Engineering + Testing
 - [ ] Day 13 — Evaluation on Dataset
 - [ ] Day 14 — Review + v0.2.0 Tag
 
@@ -180,3 +180,18 @@
 - Error handling patterns for microservices.
 
 **Blockers:** AI timed out due to slow internet, but software handled it gracefully.
+
+
+
+### Day 12 — 2025-11-03
+**Time spent:** 60 min
+**What I did:**
+- Improved AI prompts (shorter, more direct).
+- Added user-friendly error messages for AI failures.
+- Tested graceful timeout handling.
+
+**What I learned:**
+- Writing clear prompts for LLMs.
+- Mapping technical errors to user-friendly messages.
+
+**Blockers:** None
