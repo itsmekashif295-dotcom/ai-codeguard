@@ -21,7 +21,7 @@
 - [x] Day 10 — Hybrid Scanner (Bandit + AI)
 - [x] Day 11 — Confidence Scoring
 - [x] Day 12 — Prompt Engineering + Testing
-- [ ] Day 13 — Evaluation on Dataset
+- [x] Day 13 — Evaluation on Dataset
 - [ ] Day 14 — Review + v0.2.0 Tag
 
 ---
@@ -192,3 +192,20 @@
 **What I learned:**
 - How to merge confidence from multiple sources.
 - Better UX with friendly error messages.
+
+
+### Day 13 — 2025-11-04
+**Time spent:** 60 min
+**What I did:**
+- Installed chromadb and sentence-transformers.
+- Created `rag_service.py` to setup a local vector database.
+- Seeded it with CWE documentation.
+- Tested retrieval of CWE-78 and CWE-89 knowledge.
+- Fixed Git mistake: removed local DB files from repo and added to .gitignore.
+
+**What I learned:**
+- How Vector Databases work.
+- How to use sentence-transformers for embeddings.
+- Why local binary files shouldn't be pushed to Git.
+
+**Blockers:** None
