@@ -5,33 +5,32 @@ from app.services.ai_service import analyze_code_with_ai
 
 def run_hybrid_scan(code: str) -> List[Finding]:
     findings = run_bandit(code)
-    ai_result = analyze_code_with_ai(code)
+    try:
+        ai_result = analyze_code_with_ai(code)
+    except Exception:
+        ai_result = {"error": "AI Failed"}
 
     if "error" in ai_result:
         for finding in findings:
-            finding.ai_explanation = ai_result["error"]
-            finding.confidence_score = 50 # Agar AI fail ho, toh 50% score do
+            finding.ai_explanation = "AI offline"
+            finding.confidence_score = 50
         return findings
 
-    if not findings and ai_result.get("is_vulnerable"):
-        findings.append(Finding(
-            cwe=ai_result.get("cwe_id"),
-            severity=ai_result.get("severity", "MEDIUM"),
-            line=0,
-            description=ai_result.get("explanation", "AI detected a potential issue"),
-            source="ai",
-            ai_explanation=ai_result.get("explanation"),
-            ai_fix=ai_result.get("fix"),
-            confidence_score=80 # Sirf AI ne pakda toh 80% score
-        ))
-    elif findings:
+    if findings:
         for finding in findings:
-            finding.ai_explanation = ai_result.get("explanation")
-            finding.ai_fix = ai_result.get("fix")
-            # Agar Bandit aur AI dono ne pakda, toh 95% score
-            if ai_result.get("is_vulnerable"):
-                finding.confidence_score = 95
-            else:
-                finding.confidence_score = 70 # Sirf Bandit ne pakda
+            finding.ai_explanation = str(ai_result.get("explanation", ""))
+            finding.ai_fix = str(ai_result.get("fix", ""))
+            finding.confidence_score = 95
+    elif not findings and ai_result.get("is_vulnerable"):
+        findings.append(Finding(
+            cwe=str(ai_result.get("cwe_id", "Unknown")),
+            severity=str(ai_result.get("severity", "MEDIUM")),
+            line=0,
+            description=str(ai_result.get("explanation", "AI detected issue")),
+            source="ai",
+            ai_explanation=str(ai_result.get("explanation", "")),
+            ai_fix=str(ai_result.get("fix", "")),
+            confidence_score=80
+        ))
 
     return findings

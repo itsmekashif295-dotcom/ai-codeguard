@@ -14,24 +14,12 @@ class Finding(BaseModel):
     test_id: Optional[str] = None
     confidence: Optional[str] = None
     source: str = "bandit"
-    # Naye fields AI ke liye:
     ai_explanation: Optional[str] = None
     ai_fix: Optional[str] = None
+    confidence_score: Optional[int] = 0
 
 class ScanResponse(BaseModel):
     filename: str
     language: str
     total_findings: int
     findings: List[Finding]
-
-class Finding(BaseModel):
-    cwe: Optional[str] = None
-    severity: str
-    line: int
-    description: str
-    test_id: Optional[str] = None
-    confidence: Optional[str] = None
-    source: str = "bandit"
-    ai_explanation: Optional[str] = None
-    ai_fix: Optional[str] = None
-    confidence_score: Optional[int] = 0  # <-- Yeh naya field add karein
