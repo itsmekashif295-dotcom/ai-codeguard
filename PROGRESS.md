@@ -22,7 +22,7 @@
 - [x] Day 11 — Confidence Scoring
 - [x] Day 12 — Prompt Engineering + Testing
 - [x] Day 13 — Evaluation on Dataset
-- [ ] Day 14 — Review + v0.2.0 Tag
+- [x] Day 14 — Review + v0.2.0 Tag
 
 ---
 
@@ -209,3 +209,17 @@
 - Why local binary files shouldn't be pushed to Git.
 
 **Blockers:** None
+
+
+### Day 14 — 2025-11-05
+**Time spent:** 120 min
+**What I did:**
+- Integrated RAG database with AI service.
+- Fixed Pydantic validation errors (500 error) related to AI output types.
+- Verified fallback logic (AI offline -> returns Bandit result).
+
+**What I learned:**
+- How to handle unexpected data types from third-party APIs.
+- The importance of graceful degradation in software.
+
+**Blockers:** Internet slow, AI times out, but fallback works perfectly.
