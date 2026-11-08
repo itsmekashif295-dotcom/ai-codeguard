@@ -24,6 +24,15 @@
 - [x] Day 13 — Evaluation on Dataset
 - [x] Day 14 — Review + v0.2.0 Tag
 
+### Week 3 Checklist (RAG & Web UI)
+- [x] Day 15 — Fix RAG + Basic Web UI
+- [x] Day 16 — Speed Fix & Professional UI
+- [ ] Day 17 — Advanced UI Features (Mobile Responsive)
+- [ ] Day 18 — File Upload Feature in UI
+- [ ] Day 19 — GitHub Action Integration
+- [ ] Day 20 — Dockerize the Project
+- [ ] Day 21 — Review + v0.3.0 Tag
+
 ---
 
 ## 📅 Daily Log
@@ -223,3 +232,30 @@
 - The importance of graceful degradation in software.
 
 **Blockers:** Internet slow, AI times out, but fallback works perfectly.
+
+
+### Day 15 — 2025-11-08
+**Time spent:** 120 min
+**What I did:**
+- Fixed RAG data type bug.
+- Re-integrated RAG into AI service.
+- Built basic HTML/CSS/JS Web UI.
+- Served Web UI via FastAPI StaticFiles.
+
+**What I learned:**
+- How to serve static files in FastAPI.
+- How to make API calls from Vanilla JS.
+
+**Blockers:** None
+
+### Day 16 — 2025-11-09
+**Time spent:** 90 min
+**What I did:**
+- Reduced AI timeout to 4 seconds for better UX.
+- Added loading spinner to the Web UI.
+- Formatted the JSON output into beautiful UI cards.
+
+**What I learned:**
+- Frontend UI/UX improvements with CSS and JS.
+
+**Blockers:** None
