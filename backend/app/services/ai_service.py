@@ -2,10 +2,16 @@ import os
 import json
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
 from app.services.rag_service import get_cwe_context
 
 load_dotenv()
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+# Yahan Timeout 4 second (4000 ms) set kar diya hai
+client = genai.Client(
+    api_key=os.getenv("GEMINI_API_KEY"),
+    http_options=types.HttpOptions(timeout=4000) 
+)
 
 def analyze_code_with_ai(code: str) -> dict:
     prompt = f"""
@@ -23,7 +29,6 @@ Code:
         
         result = json.loads(raw_text.strip())
         
-        # Agar AI ne vulnerability batai, toh RAG se exact fix lao
         if result.get("is_vulnerable") and result.get("cwe_id"):
             rag_fix = get_cwe_context(result["cwe_id"])
             if rag_fix != "No documentation found.":
