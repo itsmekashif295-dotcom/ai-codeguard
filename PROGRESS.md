@@ -27,7 +27,7 @@
 ### Week 3 Checklist (RAG & Web UI)
 - [x] Day 15 — Fix RAG + Basic Web UI
 - [x] Day 16 — Speed Fix & Professional UI
-- [ ] Day 17 — Advanced UI Features (Mobile Responsive)
+- [x] Day 17 — Advanced UI Features (Mobile Responsive)
 - [ ] Day 18 — File Upload Feature in UI
 - [ ] Day 19 — GitHub Action Integration
 - [ ] Day 20 — Dockerize the Project
@@ -257,5 +257,19 @@
 
 **What I learned:**
 - Frontend UI/UX improvements with CSS and JS.
+
+**Blockers:** None
+
+
+### Day 17 — 2025-11-10
+**Time spent:** 120 min
+**What I did:**
+- Added File Upload feature using JavaScript FileReader.
+- Made the Web UI fully mobile-responsive using CSS media queries.
+- Tested file upload and scan functionality end-to-end.
+
+**What I learned:**
+- How to read local files in browser using JS.
+- CSS media queries for mobile responsiveness.
 
 **Blockers:** None
