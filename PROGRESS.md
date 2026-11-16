@@ -28,7 +28,7 @@
 - [x] Day 15 — Fix RAG + Basic Web UI
 - [x] Day 16 — Speed Fix & Professional UI
 - [x] Day 17 — Advanced UI Features (Mobile Responsive)
-- [ ] Day 18 — File Upload Feature in UI
+- [x] Day 18 — File Upload Feature in UI
 - [ ] Day 19 — GitHub Action Integration
 - [ ] Day 20 — Dockerize the Project
 - [ ] Day 21 — Review + v0.3.0 Tag
@@ -273,3 +273,19 @@
 - CSS media queries for mobile responsiveness.
 
 **Blockers:** None
+
+
+### Day 18 — 2025-11-12
+**Time spent:** 120 min
+**What I did:**
+- Installed Docker Desktop and enabled WSL/Virtual Machine features.
+- Created Dockerfile, .dockerignore, and docker-compose.yml.
+- Built Docker image successfully.
+- Ran the container and verified the Web UI works.
+
+**What I learned:**
+- How Docker works.
+- How to write a Dockerfile.
+- How to run multi-container apps with docker-compose.
+
+**Blockers:** Faced Docker engine and chromadb module errors, fixed by installing missing dependencies.
