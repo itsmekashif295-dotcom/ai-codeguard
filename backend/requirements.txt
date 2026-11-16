@@ -9,3 +9,5 @@ typer==0.12.5
 requests==2.32.3
 google-genai
 python-dotenv
+chromadb
+sentence-transformers
