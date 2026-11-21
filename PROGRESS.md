@@ -29,7 +29,7 @@
 - [x] Day 16 — Speed Fix & Professional UI
 - [x] Day 17 — Advanced UI Features (Mobile Responsive)
 - [x] Day 18 — File Upload Feature in UI
-- [ ] Day 19 — GitHub Action Integration
+- [x] Day 19 — GitHub Action Integration
 - [ ] Day 20 — Dockerize the Project
 - [ ] Day 21 — Review + v0.3.0 Tag
 
@@ -289,3 +289,19 @@
 - How to run multi-container apps with docker-compose.
 
 **Blockers:** Faced Docker engine and chromadb module errors, fixed by installing missing dependencies.
+
+
+### Day 19 — 2025-11-13
+**Time spent:** 120 min
+**What I did:**
+- Created GitHub Actions workflow for automated testing.
+- Added GEMINI_API_KEY as a GitHub secret.
+- Fixed failing tests by adding conftest.py and removing dummy test file.
+- Pushed the workflow and verified it passes on GitHub (Green Check).
+
+**What I learned:**
+- How CI/CD pipelines work.
+- How to store secrets securely in GitHub.
+- How to debug GitHub Actions workflows.
+
+**Blockers:** Fixed failed tests due to missing API key and leftover test file.
