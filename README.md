@@ -1,38 +1,30 @@
 # 🛡️ AI CodeGuard
 
-> AI-Generated Code Vulnerability Detection System
+AI-Generated Code Vulnerability Detection System
 
-Detect security vulnerabilities in AI-generated (and human-written) code using static analysis + AI. Get CWE-mapped findings with severity, line numbers, and secure fix suggestions.
+Yeh project AI se banaye gaye code mein security vulnerabilities (jaise SQL Injection, Command Injection) dhoondta hai aur unko fix karne ka tareeqa batata hai.
 
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Python](https://img.shields.io/badge/python-3.12%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-v0.1.0-orange)
+![Version](https://img.shields.io/badge/version-v0.3.0-orange)
 
 ---
 
-## 🎯 Problem
+## 🎯 Kya Karta Hai?
 
-AI coding assistants (ChatGPT, Copilot, Claude) generate code fast — but often with vulnerabilities. **AI CodeGuard** scans this code and reports issues before they reach production.
-
-## ✨ Features (v0.1.0)
-
-- [x] Python code scanning via REST API
-- [x] Bandit integration for static analysis
-- [x] CWE-mapped findings (Severity, Line number)
-- [x] Command Line Interface (CLI) tool
-- [x] Automated tests using Pytest
-- [ ] AI/LLM-based CWE classification (Week 2)
-- [ ] Web dashboard (Week 3)
+- Code scan karta hai (Bandit + Google Gemini AI).
+- Vulnerability ka naam (CWE) aur line number batata hai.
+- Fix karne ka mashwara deta hai.
+- Iska ek Web UI hai jahan aap file upload karke scan kar sakte hain.
 
 ---
 
-## 🚀 Quickstart
+## 🚀 Kaise Chalayein? (Docker ke zariye)
 
-### 1. Setup Backend
+Agar aapke paas Docker hai, toh bas yeh commands chalayein:
+
 ```bash
-cd backend
-python -m venv venv
-source venv/Scripts/activate  # Windows
-pip install -r requirements.txt
-uvicorn app.main:app --port 8000
+git clone https://github.com/itsmekashif295-dotcom/ai-codeguard.git
+cd ai-codeguard
+echo "GEMINI_API_KEY=your_api_key_here" > backend/.env
+docker compose up --build
