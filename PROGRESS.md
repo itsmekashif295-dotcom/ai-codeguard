@@ -30,8 +30,8 @@
 - [x] Day 17 — Advanced UI Features (Mobile Responsive)
 - [x] Day 18 — File Upload Feature in UI
 - [x] Day 19 — GitHub Action Integration
-- [ ] Day 20 — Dockerize the Project
-- [ ] Day 21 — Review + v0.3.0 Tag
+- [x ] Day 20 — Dockerize the Project
+- [x] Day 21 — Review + v0.3.0 Tag
 
 ---
 
@@ -305,3 +305,18 @@
 - How to debug GitHub Actions workflows.
 
 **Blockers:** Fixed failed tests due to missing API key and leftover test file.
+
+
+### Day 21 — 2025-11-15
+**Time spent:** 120 min
+**What I did:**
+- Reviewed project and confirmed all features are working.
+- Updated README for v0.3.0.
+- Created version tag v0.3.0 and pushed to GitHub.
+- Marked Week 3 as complete.
+
+**What I learned:**
+- How to tag and release a project.
+- Importance of README documentation.
+
+**Blockers:** None
