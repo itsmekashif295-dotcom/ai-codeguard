@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from app.api import scan
+from app.services.database import init_db
 
-app = FastAPI(title="AI CodeGuard", version="0.1.0")
+# Database tables banayein
+init_db()
+
+app = FastAPI(title="AI CodeGuard", version="0.3.0")
 
 app.include_router(scan.router)
 
