@@ -33,6 +33,15 @@
 - [x ] Day 20 — Dockerize the Project
 - [x] Day 21 — Review + v0.3.0 Tag
 
+### Week 4 Checklist (Final Polish & Deployment)
+- [x] Day 22 — Scan History (Database)
+- [ ] Day 23 — Show History in Web UI
+- [ ] Day 24 — UI Polish & Bug Fixes
+- [ ] Day 25 — Final Deployment Prep
+- [ ] Day 26 — Deployment (Render/Ngrok)
+- [ ] Day 27 — Final Testing & Review
+- [ ] Day 28 — v1.0.0 Release Tag
+
 ---
 
 ## 📅 Daily Log
@@ -318,5 +327,20 @@
 **What I learned:**
 - How to tag and release a project.
 - Importance of README documentation.
+
+**Blockers:** None
+
+### Day 22 — 2025-11-16
+**Time spent:** 120 min
+**What I did:**
+- Added SQLAlchemy and SQLite database for scan history.
+- Created ScanHistory model.
+- Updated scan endpoint to save results.
+- Created GET /scan/history endpoint.
+- Tested both endpoints successfully.
+
+**What I learned:**
+- How to use SQLAlchemy with FastAPI.
+- How to persist data in SQLite.
 
 **Blockers:** None
